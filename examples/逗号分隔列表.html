@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逗号分隔列表</title>
+	<style>
+
+	ul{list-style: none;}
+	ul > li{
+		float: left;
+	}
+	ul > li:not(:last-child):after{
+		content: '，';
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>香蕉</li>
+		<li>苹果</li>
+		<li>柚子</li>
+		<li>板栗</li>
+		<li>芒果</li>
+	</ul>
+</body>
+</html>

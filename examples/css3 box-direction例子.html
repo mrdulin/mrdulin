@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>css3 box-direction</title>
+    <style>
+      .box-direction{
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        padding: 20px;
+        border: 1px solid #ddd;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -ms-box-orient: horizontal;
+        box-orient: horizontal;
+      }
+
+      .box-direction.normal{
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -ms-box-direction: normal;
+        box-direction: normal;
+      }
+
+      .box-direction.reverse{
+        -webkit-box-direction: reverse;
+        -moz-box-direction: reverse;
+        -ms-box-direction: reverse;
+        box-direction: reverse;
+      }
+
+      .box {
+        width: 60px;
+        height: 60px;
+        background-color: #ddd;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>box-direction属性可以改变盒子元素中内部元素的流动顺序</h3>
+    <p><code>box-direction: normal;</code> 内部元素的流动顺序是从左向右</p>
+    <div class="box-direction normal">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+    <p><code>box-direction: reverse;</code> 内部元素的流动顺序是从右向左</p>
+    <div class="box-direction reverse">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>

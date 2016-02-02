@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CSS3 columns layout</title>
+    <style>
+        .column-ctn {
+            border: 1px solid #ddd;
+            /* 列数 */
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 4;
+            /* 列宽 */
+            /*-webkit-column-width: 100px;*/
+            /*-moz-column-width: 100px;*/
+            /*column-width: 100px;*/
+            /* 列间距 */
+            -webkit-column-gap: 26px;
+            -moz-column-gap: 26px;
+            column-gap: 26px;
+            /* 列分割线颜色 */
+            -webkit-column-rule-color: red;
+            -moz-column-rule-color: red;
+            column-rule-color: red;
+            /* 列分割线宽度 */
+            -webkit-column-rule-width: 1px;
+            -moz-column-rule-width: 1px;
+            column-rule-width: 1px;
+            /* 列分割线样式 */
+            -webkit-column-rule-style: solid;
+            -moz-column-rule-style: solid;
+            column-rule-style: solid;
+            /* 列填充 */
+            /*auto：各列高度随其内容的变化自动变化*/
+            /*balance: 各列的高度将会根据内容最多的那一列的高度进行统一，默认值*/
+            -webkit-column-fill: auto;
+            -moz-column-fill: auto;
+            column-fill: auto;
+        }
+
+        .column-ctn > span {
+            display: block;
+            width: 60px;
+            height: 40px;
+            border: 1px solid #666;
+            background-color: #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;;
+        }
+
+        .column-ctn > h3,
+        .column-ctn > h4 {
+            /* 跨列显示 */
+            -webkit-column-span: all;
+            column-span: all;
+            text-align: center;
+            text-shadow: 0 0 2px #666;
+        }
+    </style>
+</head>
+<body>
+<p>设置固定列宽column-width，则会根据窗口宽度自动调整列的数量</p>
+
+<p>设置固定列数column-count，则会根据窗口宽度自动调整列的宽度，列数总是设置的列数</p>
+
+<p>列间距column-gap，默认值为normal</p>
+
+<div class="column-ctn">
+    <h3>跨列显示主标题</h3>
+    <h4>跨列显示次标题</h4>
+    <span>0</span>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>10</span>
+    <span>11</span>
+    <span>12</span>
+    <span>13</span>
+    <span>14</span>
+    <span>15</span>
+    <span>16</span>
+    <span>17</span>
+    <span>18</span>
+    <span>19</span>
+    <span>20</span>
+    <span>21</span>
+    <span>22</span>
+    <span>23</span>
+</div>
+</body>
+</html>

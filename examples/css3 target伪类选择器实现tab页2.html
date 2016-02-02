@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>tab页v1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft yahei", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+        }
+
+        ul, ol {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tab-container {
+            position: relative;
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        .tab-list > a {
+            float: left;
+            width: 33.33%;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .tab-contents {
+            clear: both;
+        }
+
+        .tab-contents > li {
+            display: none;
+            height: 200px;
+            line-height: 200px;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .tab-contents > li:first-child {
+            display: block;
+            background-color: mediumturquoise;
+        }
+
+        .tab-contents > li:nth-child(2) {
+            background-color: #619FF2;
+        }
+
+        .tab-contents > li:last-child {
+            background-color: salmon;
+        }
+
+        .tab-list > a:first-child {
+            color: #619FF2;
+        }
+
+        #tab1:target .tab-list > a:first-child,
+        #tab2:target .tab-list > a:nth-child(2),
+        #tab3:target .tab-list > a:last-child {
+            color: #619FF2;
+        }
+
+        #tab1:target .tab-list > a:not(:first-child),
+        #tab2:target .tab-list > a:not(:nth-child(2)),
+        #tab3:target .tab-list > a:not(last-child) {
+            color: #666;
+        }
+
+        #tab1:target .tab-contents > li:first-child,
+        #tab2:target .tab-contents > li:nth-child(2),
+        #tab3:target .tab-contents > li:last-child {
+            display: block;
+        }
+
+        #tab1:target .tab-contents > li:not(:first-child),
+        #tab2:target .tab-contents > li:not(:nth-child(2)),
+        #tab3:target .tab-contents > li:not(last-child) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="tab-container">
+    <div id="tab1">
+        <div id="tab2">
+            <div id="tab3">
+                <div class="tab-list">
+                  <a href="#tab1">标签一</a>
+                  <a href="#tab2">标签二</a>
+                  <a href="#tab3">标签三</a>
+                </div>
+                <ul class="tab-contents">
+                    <li>tab1</li>
+                    <li>tab2</li>
+                    <li>tab3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

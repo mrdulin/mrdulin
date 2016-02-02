@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>给body添加line-height</title>
+	<style>
+	body{
+		line-height: 2;
+	}
+	#container{
+		width: 300px;
+		height: 300px;
+		border: 1px solid #ddd;
+		overflow : auto;
+	}
+
+	/*不要单独设置，但一切以需求为准*/
+	/*.lh2{
+		line-height: 2;
+	}*/
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p class="lh2">删除了google帐号，删了firefox帐号，使用QQ浏览器。</p>
+		<p>不用给每一个段落，标题标签单独设置line-height，可以给body设置，所有文本元素会继承body上的line-height值。</p>
+	</div>
+</body>
+</html>

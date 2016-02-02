@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>给nth-child中的n指定负值</title>
+	<style>
+	ul{list-style-type: none;}
+	ul > li{
+		float: left;
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		background-color: blue;
+	}
+
+	ul > li:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	/*选取索引小于等于3的元素*/
+	ul > li:nth-child(-n + 3){
+		background-color: black;
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

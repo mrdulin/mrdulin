@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用not()给导航添加border</title>
+	<style>
+	ul{list-style: none;}
+
+	.nav > li{
+		float: left;
+		width: 100px;
+		height: 40px;
+		line-height: 40px;
+		/*不推荐的方式*/
+		/*border-right: 1px solid #ddd;*/
+		text-align: center;
+	}
+
+	/*不推荐的方式*/
+	/*.nav > li:last-child{
+		border-right: none;
+	}*/
+
+	/*推荐的方式*/
+	.nav > li:not(:last-child) {
+		border-right: 1px solid #ddd;
+	}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">电影</a></li>
+		<li><a href="#">音乐</a></li>
+		<li><a href="#">游戏</a></li>
+		<li><a href="#">关于</a></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用max-height实现一个slider</title>
+	<style>
+	ul {list-style-type: none;}
+
+	ul,p, h3{
+		margin: 0;
+		padding: 0;
+	}
+
+	.slider{
+		width: 300px;
+	}
+	.slider > h3{
+		padding: 10px 0;
+		background-color: #ddd;
+		text-align: center;
+	}
+
+	.slider:hover > ul{
+		max-height: 300px;
+		-webkit-transition: .3s ease max-height;
+		-o-transition: .3s ease max-height;
+		transition: .3s ease max-height;
+		border: 1px solid #ddd;
+	}
+
+	.slider-body{
+		max-height: 0;
+		border: none;
+		overflow: hidden;
+
+	}
+
+	.slider-body > li{
+		padding: 10px;
+	}
+
+	.slider-body > li:not(:last-child){
+		border-bottom: 1px solid #ddd;
+	}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<h3>鼠标悬浮展开菜单</h3>
+		<ul class="slider-body">
+			<li><a href="#">淘宝</a></li>
+			<li><a href="#">天猫</a></li>
+			<li><a href="#">京东</a></li>
+			<li><a href="#">当当</a></li>
+			<li><a href="#">易迅</a></li>
+		</ul>
+	</div>
+</body>
+</html>

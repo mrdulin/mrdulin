@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CSS3 box-orient</title>
+    <style>
+        .box-orient {
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .box-orient.horizontal {
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            -ms-box-orient: horizontal;
+            box-orient: horizontal;
+        }
+
+        .box-orient.vertical {
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            box-orient: vertical;
+        }
+
+        .box-orient.inline-axis {
+            -webkit-box-orient: inline-axis;
+            -moz-box-orient: inline-axis;
+            -ms-box-orient: inline-axis;
+            box-orient: inline-axis;
+        }
+
+        .box-orient.block-axis {
+            -webkit-box-orient: block-axis;
+            -moz-box-orient: block-axis;
+            -ms-box-orient: block-axis;
+            box-orient: block-axis;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #ddd;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>box-orient属性可用于定义盒子元素内部的流动布局方向</h3>
+
+<p>使用弹性盒子模型，需要先把父容器的display属性设置为box或者inline-box</p>
+
+<div class="box-orient horizontal">
+    <p>文档流被修改为水平从左向右流动</p>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<div class="box-orient vertical">
+    <p>文档流设置为垂直从上到下流动(和正常文档流效果一样)</p>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<div class="box-orient inline-axis">
+    <p>文档流设置为沿着内联轴流动（inline-axis根据书写模式来决定）</p>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+<div class="box-orient block-axis">
+    <p>文档流设置为沿着块轴流动（block-axis根据书写模式来决定）</p>
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>tab页v2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Microsoft yahei", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+        }
+
+        ul, ol {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tab-container {
+            position: relative;
+            width: 500px;
+            margin: 50px auto;
+        }
+
+        .tab-list {
+            overflow: hidden;
+        }
+
+        .tab-list > a {
+            float: left;
+            width: 33.33%;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            text-align: center;
+            color: #666;
+        }
+
+        .tab-contents {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .tab-contents > div {
+            height: 100%;
+            line-height: 200px;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .tab-contents > div:first-child {
+            background-color: #eddaab;
+        }
+
+        .tab-contents > div:nth-child(2) {
+            background-color: #a2825c;
+        }
+
+        .tab-contents > div:last-child {
+            background-color: #707264;
+        }
+    </style>
+</head>
+<body>
+<div class="tab-container">
+    <div class="tab-list">
+      <a href="#tab1">标签一</a>
+      <a href="#tab2">标签二</a>
+      <a href="#tab3">标签三</a>
+    </div>
+    <div class="tab-contents">
+        <div id="tab1" class="val">tab1</div>
+        <div id="tab2" class="val">tab2</div>
+        <div id="tab3" class="val">tab3</div>
+    </div>
+</div>
+</body>
+</html>

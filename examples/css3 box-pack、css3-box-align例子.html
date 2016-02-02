@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>css3 box-pack和css3-box-align</title>
+    <style>
+        .box-container {
+            width: 960px;
+            height: 200px;
+            margin: 0 auto 50px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            border: 1px solid #ddd;
+            padding: 20px;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-box-pack: center;
+            box-pack: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-box-align: center;
+            box-align: center;
+            /*-webkit-box-orient: vertical;*/
+            /*-moz-box-orient: vertical;*/
+            /*-ms-box-orient: vertical;*/
+            /*box-orient: vertical;*/
+            /* 定义子元素分行显示 */
+            -webkit-box-lines: multiple;
+            -ms-box-lines: multiple;
+            box-lines: multiple;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: #ddd;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>box-pack</h3>
+<ul>
+    <li>start: 所有子元素都显示在盒子的左侧，富余的空间显示在盒子的右侧</li>
+    <li>end: 所有子元素都显示在盒子的右侧，富余的空间显示在盒子的左侧</li>
+    <li>justify: 富余的空间在子元素之间平均分配。在第一个子元素之前和最后一个子元素之后不分配空间</li>
+    <li>center: 富余的空间在盒子的两侧平均分配</li>
+</ul>
+<h3>box-align</h3>
+<ul>
+    <li>start: 所有子元素沿盒子的上边缘排列，都显示在盒子的上部，富余的空间显示在盒子的底部</li>
+    <li>end: ..下边缘.....上部</li>
+    <li>center: 富余的空间在盒子的上下两侧平均分配，即上面一半，下面一半</li>
+    <li>baseline: 所有盒子沿着它们的基线排列，富余的空间可前可后显示</li>
+    <li>stretch: 每个子元素的高度被调整到适合盒子的高度显示，默认值</li>
+</ul>
+<strong>可以解决：自适应垂直居中问题</strong>
+
+<div class="box-container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+</body>
+</html>

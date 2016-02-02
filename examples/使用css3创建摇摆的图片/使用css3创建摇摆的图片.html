@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用css3创建摇摆的图片</title>
+    <style>
+        @keyframes swingAnimation {
+            0% {
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                -o-transform: rotate(10deg);
+                transform: rotate(10deg);
+            }
+            50%{
+                -webkit-transform: rotate(-5deg);
+                -moz-transform: rotate(-5deg);
+                -ms-transform: rotate(-5deg);
+                -o-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+            }
+            100%{
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+                -o-transform: rotate(10deg);
+                transform: rotate(10deg);
+            }
+        }
+
+        .swing{
+            -webkit-animation: swingAnimation 3.5s ease-in-out forwards infinite;
+            -o-animation: swingAnimation 3.5s ease-in-out forwards infinite;
+            animation: swingAnimation 3.5s ease-in-out forwards infinite;
+        }
+
+        .tor-x35-y0{
+            -webkit-transform-origin: 35% 0;
+            -moz-transform-origin: 35% 0;
+            -ms-transform-origin: 35% 0;
+            -o-transform-origin: 35% 0;
+            transform-origin: 35% 0;
+        }
+
+        .tor-x50-y0{
+            -webkit-transform-origin: 50% 0;
+            -moz-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            -o-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img class="swing tor-x35-y0" src="./images/salediagram.png" alt="salediagram"/>
+</div>
+
+<div>
+    <img class="swing tor-x50-y0" src="./images/wintersale.png" alt="wintersale"/>
+</div>
+
+</body>
+</html>

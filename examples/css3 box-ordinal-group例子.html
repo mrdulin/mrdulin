@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="novaline Du Lin sspeed5cm">
+    <meta name="keywords" content="code snippet CSS html js effect">
+    <meta name="description" content="前端code杂货铺，各式各样杂货">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CSS3 box-ordinal-group</title>
+    <style>
+        .box-ordinal-group {
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: #ddd;
+            margin: 20px;
+        }
+
+        .box:nth-child(1) {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            -ms-box-ordinal-group: 2;
+            box-ordinal-group: 2;
+        }
+
+        .box:nth-child(3) {
+            -webkit-box-ordinal-group: 3;
+            -moz-box-ordinal-group: 3;
+            -ms-box-ordinal-group: 3;
+            box-ordinal-group: 3;
+        }
+    </style>
+</head>
+<body>
+<h3> box-ordinal-group属性能够设置每个子元素在盒子中的具体显示位置</h3>
+
+<p> box-ordinal-group属性值是一个自然数，从1开始，用来设置子元素的位置序号。子元素的分布将根据这个属性值从小到大进行排列。在默认情况下，子元素将根据元素的位置进行排列。</p>
+
+<p> 如果没有指定box-ordinal-group属性值的子元素，则其序号默认都为1，并且序号相同的元素将按照它们在文档中加载的顺序进行排列。</p>
+
+<div class="box-ordinal-group">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+</body>
+</html>
