@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .clearfix:after{
+            content: '';
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        /*需要注意的是为了IE6和IE7浏览器，要给`clearfix`这个`class`添加一条`zoom:1`;触发`haslayout`*/
+        .clearfix{
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="clearfix" style="background-color: deepskyblue;">
+    <p style="float:left;">left</p>
+    <p style="float:right;">right</p>
+</div>
+</body>
+</html>

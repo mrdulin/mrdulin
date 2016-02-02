@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--给浮动元素的容器添加`overflow:hidden;`或`overflow:auto;`可以清除浮动，另外在`IE6`中还需要触发`hasLayout`，例如为父元素设置容器宽高或设置`zoom:1`。
+在添加overflow属性后，浮动元素又回到了容器层，把容器高度撑起，达到了清理浮动的效果。-->
+
+<div style="overflow: hidden;">
+    <p style="float: left;">向左浮动</p>
+    <p style="float: right;">向右浮动</p>
+</div>
+</body>
+</html>

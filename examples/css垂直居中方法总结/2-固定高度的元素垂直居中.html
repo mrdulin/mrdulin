@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .middle-demo2{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #666;
+        }
+        .g-box{
+            position: absolute;
+            top: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            background-color: deepskyblue;
+        }
+
+        /*或者*/
+
+        /*.g-box{*/
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*-webkit-transform: translateY(-50px);*/
+            /*-moz-transform: translateY(-50px);*/
+            /*-ms-transform: translateY(-50px);*/
+            /*-o-transform: translateY(-50px);*/
+            /*transform: translateY(-50px);*/
+            /*background-color: deepskyblue;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--要垂直居中的元素(g-box)必须是固定高度(js动态计算设置除外)-->
+<div class="middle-demo2">
+    <div class="g-box"></div>
+</div>
+</body>
+</html>
