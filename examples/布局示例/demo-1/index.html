@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            overflow: auto;
+            background-color: #ddd;
+        }
+
+        #content {
+            max-width: 600px;
+            margin: 8% auto 0;
+            background-color: red;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #555;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 18px;
+            color: #2d2d2d;
+            line-height: 1.2;
+        }
+
+        .err-img-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .err-img-container > img {
+            max-width: 100%;
+        }
+
+        .err-button-container > button {
+            width: 33.3333%;
+            margin: 0 auto;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="content">
+        <h3>Uh oh!</h3>
+        <p>Something went wrong...</p>
+        <div class="err-img-container">
+            <img src="./1.jpg" alt="">
+        </div>
+    </div>
+    <div class="err-button-container">
+        <button type="button">RETRY</button>
+    </div>
+</div>
+</body>
+</html>
