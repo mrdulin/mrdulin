@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    #container{
+        width: 320px;
+        height: 568px;
+        overflow: auto;
+        border: 1px solid #666;
+        margin: 0 auto;
+    }
+    .list{
+        font-size: 0;
+    }
+    .list > li{
+        width: 50%;
+        /*radio 1: 1*/
+        padding-top: 50%;
+
+        /*radio 1: 2*/
+        /*padding-top: 100%;*/
+
+        /*radio 2: 3*/
+        /*padding-top: 75%;*/
+
+        display: inline-block;
+        white-space: nowrap;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    /*.list > li:nth-child(2n - 1) {
+        border-right: 1px solid #000;
+    }*/
+
+    .list > li:nth-child(2n - 1):after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: #000;
+    }
+    .list > li:nth-child(1) {
+        background-color: red;
+    }
+    .list > li:nth-child(2) {
+        background-color: lightblue;
+    }
+    .list > li:nth-child(3) {
+        background-color: lightgreen;
+    }
+    .list > li:nth-child(4) {
+        background-color: blue;
+    }
+
+    </style>
+</head>
+<body>
+<div id='container'>
+    <ul class='list'>
+        <li>1</li>
+        <li>3</li>
+        <li>2</li>
+        <li>4</li>
+    </ul>
+</div>
+</body>
+</html>

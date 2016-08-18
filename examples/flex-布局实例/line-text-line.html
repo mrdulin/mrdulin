@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 320px;
+            margin: 0 auto;
+            border: 1px solid #666;
+            height: 568px;
+        }
+
+        .no-more{
+            position: relative;
+            height: 50px;
+            /*padding: 0 20px;*/
+            background-color: #ddd;
+        }
+
+        .no-more:before,
+        .no-more:after{
+            content: '';
+            height: 1px;
+            flex: 1;
+        }
+
+        .no-more:before{
+            background: linear-gradient(to left, #bbb, #ddd);
+        }
+        
+        .no-more:after{
+            background: linear-gradient(to right, #bbb, #ddd);
+        }
+
+        .no-more-label{
+            margin: 0 10px;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .flex-h-center{
+            justify-content: center;
+        }
+
+        .flex-v-center{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="no-more flex flex-h-center flex-v-center">
+        <span class="no-more-label">没有更多了~</span>
+    </div>
+</div>
+</body>
+</html>

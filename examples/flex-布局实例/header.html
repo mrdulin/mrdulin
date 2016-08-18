@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            /*width 可变*/
+            width: 320px;
+            margin: 0 auto;
+            border: 1px solid #666;
+            height: 568px;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .flex-h-center{
+            justify-content: center;
+        }
+
+        .flex-v-center{
+            align-items: center;
+        }
+
+        .left, .right{
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .left{
+            /*float: left;*/
+        }
+
+        .right{
+            /*float: right;*/
+        }
+
+        .center{
+            flex: 1;
+        }
+
+        .header{
+            background-color: #ddd;
+        }
+
+        .header input{
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header class="header flex flex-h-center flex-v-center">
+        <a class="left"><</a>
+        <div class="center">
+            <input type="text" placeholder="打不死的宝强">
+        </div>
+        <a class="right">...</a>
+    </header>
+    <p>width - 320px</p>
+</div>
+</body>
+</html>
