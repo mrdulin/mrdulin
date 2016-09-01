@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 16px;
+        }
+        .container{
+            display: flex;
+        }
+
+        .container > div{
+            flex: 1 0 auto;
+            margin: 10px;
+        }
+        .test-1{
+            width: 320px;
+            height: 568px;
+            border: 1px solid #666;
+        }
+        .test-2{
+            width: 640px;
+            height: 1136px;
+            border: 2px solid #666;
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            font-size: 32px;
+        }
+        .test-1 .form-control{
+            padding: 10px;
+        }
+        .test-2 .form-control{
+            padding: 20px;
+        }
+        input {
+            width: 100%;
+            outline: none;
+        }
+
+        .search-1{
+            height: 40px;
+            border: 1px solid #ddd;
+            padding: 0 8px;
+            font-size: 16px;
+        }
+        .search-2{
+            height: 80px;
+            font-size: 32px;
+            border: 2px solid #ddd;
+            padding: 0 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='test-1'>
+            <div class='form-control'>
+                <input class='search-1' type="text" placeholder="搜索">
+            </div>
+            <div>
+                <p>normal</p>
+                <p>320px * 568px</p>
+            </div>
+        </div>
+
+        <div class='test-2'>
+            <div class="form-control">
+                <input class='search-2' type="text" placeholder="搜索">
+            </div>
+            <div>
+                <p>transform scale 0.5</p>
+                <p>320px * 568px</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .item.item-basis100{
+            flex-basis: 100px;
+        }
+        .item.item-basis-p50{
+            flex-basis: 50%;
+        }
+        .item.item-w100{
+            width: 100px;
+        }
+        .item{
+            flex: 1;
+            background-color: red;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .flex-column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-basis100">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+     <div class="container">
+        <div class="item item-basis-p50">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <div class='container'>
+        <div class="item item-w100">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+    <div class='container'>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+
+     <div class='container flex-column'>
+        <div class="item item-w100">item</div>
+        <div class="item item-basis100">item</div>
+        <div class="item">item</div>
+    </div>
+</body>
+</html>
