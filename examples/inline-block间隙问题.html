@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            /*消除inline-block间隙*/
+            font-size: 0;
+        }
+
+        .item{
+            display: inline-block;
+            width: 50%;
+            height: 100px;
+          
+            box-sizing: border-box;
+            padding: 2px;
+        }
+
+        .item > img{
+            display: block;
+            background-color: lightblue;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <div class="item">
+            <img src="" alt="">
+        </div>
+        <div class="item">
+             <img src="" alt="">
+        </div>
+        <div class="item">
+             <img src="" alt="">
+        </div>
+        <div class="item"> 
+            <img src="" alt="">
+        </div>
+    </div>
+</body>
+</html>
