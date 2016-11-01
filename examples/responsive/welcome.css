@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: PingHei, 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+body * {
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    padding-top: 8em;
+    text-align: center;
+}
+
+.header > div {
+    width: 420px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .col-l {
+    float: left;
+    width: 75px;
+    height: 100%;
+}
+
+.header .col-r {
+    float: right;
+    width: 345px;
+    height: 100%;
+    padding-left: 22px;
+}
+
+.header .col-r > h1,
+.header .col-r > p {
+    text-align: left;
+}
+
+.header .col-r > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.header .col-r > .small-layout {
+    display: none;
+}
+
+.header .col-r > .normal-layout {
+    font-size: 14px;
+    line-height: 1.357em;
+    color: rgb(112, 112, 112);
+    margin-top: .8em;
+}
+
+.header .logo {
+    display: block;
+    background: url(img/molasync_logo_large.png) no-repeat 50% 0;
+    background-size: 75px 95px;
+    width: 100%;
+    height: 100px;
+}
+
+@media only screen and (max-width: 740px) {
+    .header .logo {
+        background: url(img/molasync_logo_medium.png) no-repeat 50% 0;
+        background-size: 75px 85px;
+    }
+    .header {
+        height: 250px;
+    }
+    .header > div {
+        width: 372px;
+    }
+    .header .col-r {
+        width: 296px;
+        padding-left: 18px;
+    }
+    .header .col-r > h1 {
+        font-size: 20px;
+    }
+    .header .col-r > .normal-layout {
+        font-size: 12px;
+        line-height: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 740px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 740px) and (min-resolution: 144dpi),
+only screen and (max-width: 740px) and (min-resolution: 144dppx) {
+    .header .logo {
+        background: url(img/molasync_logo_medium@2x.png) no-repeat 50% 0;
+        background-size: 75px 85px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header .logo {
+        background: url(img/molasync_logo_small.png) no-repeat 50% 0;
+        background-size: 65px 80px;
+    }
+    .header > div {
+        width: 273px;
+    }
+    .header .col-l {
+        width: 65px;
+    }
+    .header .col-r {
+        width: 208px;
+        padding-left: 16px;
+    }
+    .header .col-r > h1 {
+        font-size: 14px;
+    }
+    .header .col-r > .normal-layout {
+        display: none;
+    }
+    .header .col-r > .small-layout {
+        display: block;
+        color: rgb(112, 112, 112);
+        line-height: 1.16em;
+        margin-top: .8em;
+    }
+}
+
+@media only screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 420px) and (min-resolution: 144dpi),
+only screen and (max-width: 420px) and (min-resolution: 144dppx) {
+    .header .logo {
+        background: url(img/molasync_logo_small@2x.png) no-repeat 50% 0;
+        background-size: 65px 80px;
+    }
+}
+
+.link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #ffffff;
+}
+
+.link a {
+    display: block;
+    height: 100%;
+}
+
+@media only screen and (min-width: 763px) {
+    .link {
+        width: 100%;
+        height: 208px;
+        background-color: #ffffff;
+    }
+    .link li {
+        float: left;
+        display: block;
+        width: 33.333%;
+        height: 200px;
+        background-color: #f2f2f2;
+    }
+    .link li:nth-of-type(2) {
+        margin-bottom: 0;
+        margin-top: 0;
+        background-color: #ffffff;
+    }
+    .link li:nth-of-type(2) > a {
+        width: 98.7%;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+    }
+}
+
+@media only screen and (max-width: 762px) {
+    .link {
+        height: 100%;
+    }
+    .link li {
+        display: block;
+        width: 100%;
+        height: 200px;
+        background-color: #f2f2f2;
+    }
+    .link li:nth-of-type(2) {
+        margin: 4px 0;
+    }
+}
+
+.link li > a {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 200px 200px;
+}
+
+.link li:nth-of-type(1) > a {
+    background-image: url(img/promo_ios_large.png);
+}
+
+.link li:nth-of-type(2) > a {
+    background-image: url(img/promo_app_large.png);
+}
+
+.link li:nth-of-type(3) > a {
+    background-image: url(img/promo_web_large.png);
+}
+
+@media only screen and (max-width: 762px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 762px) and (min-resolution: 144dpi),
+only screen and (max-width: 762px) and (min-resolution: 144dppx) {
+    .link li {
+        display: block;
+        width: 100%;
+        height: 200px;
+        background-color: #f2f2f2;
+    }
+    .link li:nth-of-type(1) > a {
+        background-image: url(img/promo_ios_large@2x.png);
+    }
+    .link li:nth-of-type(2) > a {
+        background-image: url(img/promo_app_large@2x.png);
+    }
+    .link li:nth-of-type(3) > a {
+        background-image: url(img/promo_web_large@2x.png);
+    }
+}
