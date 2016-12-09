@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            border: 1px solid #222;
+            height: 80px;
+            overflow: hidden;
+            margin-top: 1000px;
+        }
+
+        .box + a{
+            display: inline;
+        }
+
+        .box + a + a{
+            display: none;
+        }
+
+        .box:target{
+            height: auto;
+        }
+
+        .box:target + a {
+            display: none;
+        }
+        .box:target + a + a{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <p>请看下面</p>
+    <div id='more' class='box'>
+        <p>
+            target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器
+            target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器
+            target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器target 选择器
+        </p>
+    </div>
+    <a href="#more">更多</a>
+    <a href="#">缩小</a>
+</body>
+</html>
