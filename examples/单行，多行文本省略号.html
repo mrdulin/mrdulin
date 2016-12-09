@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单行，多行文本省略号</title>
+    <style>
+        #container{
+            border: 1px solid #333;
+            width: 400px;
+            padding: 10px;
+        }
+        #demo-1{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+
+        #demo-2{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+
+        #demo-3{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <!--
+            只支持单行文本的溢出显示省略号
+        -->
+        <p id='demo-1'>单行，多行文本省略号单行，多行文本省略号单行，多行文本省略号单行，多行文本省略号</p></br>
+
+
+        <!--
+            注：
+            -webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+            display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+            -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+
+            适用范围：
+            因使用了WebKit的CSS扩展属性，该方法适用于WebKit浏览器及移动端；
+        -->
+        <p id='demo-2'>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+        </p>
+
+        <!--
+            上述多行文本显示省略号的方法不适用有padding-top和padding-bottom的情况
+        -->
+         <p id='demo-3'>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+            <span>单行，多行文本省略号单行，多行文本省略号单行，多单行，多行文本省略号单行，多行文本省略号单行，多</span>
+        </p>
+    </div>
+</body>
+</html>
