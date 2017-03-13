@@ -1,0 +1,77 @@
+.button {
+    @include button-style($button-default-bg, $button-default-border, $button-default-active-bg, $button-default-active-border, $button-default-active-text, $button-default-text);
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 $button-padding;
+    min-width: ($button-padding * 3) + $button-font-size;
+    min-height: $button-height + 5px;
+    border-width: $button-border-width;
+    border-style: solid;
+    border-radius: $button-border-radius;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: $button-font-size;
+    line-height: $button-height - $button-border-width + 1px;
+    cursor: pointer;
+    &:after {
+        // used to create a larger button "hit" area
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        bottom: -6px;
+        left: -6px;
+        content: ' ';
+    }
+    &.button-block,
+    &.button-full {
+        margin-top: $button-block-margin;
+        margin-bottom: $button-block-margin;
+    }
+    &.button-light {
+        @include button-style($button-light-bg, $button-default-border, $button-light-active-bg, $button-default-active-border, $button-default-active-text, $button-light-text);
+        @include button-clear($button-light-border);
+        @include button-outline($button-light-border);
+    }
+
+    &.button-energized {
+        @include button-style($button-energized-bg, $button-default-border, $button-energized-active-bg, $button-default-active-border, $button-energized-active-text, $button-energized-text);
+        @include button-clear($button-energized-bg);
+        @include button-outline($button-energized-bg);
+    }
+ 
+}
+
+.button-block {
+  display: block;
+  clear: both;
+
+  &:after {
+    clear: both;
+  }
+}
+
+.button-full,
+.button-full > .button {
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  border-radius: 0;
+}
+
+button.button-block,
+button.button-full,
+.button-full > button.button,
+input.button.button-block  {
+  width: 100%;
+}
+
+.button.disabled,
+.button[disabled] {
+  opacity: .4;
+  cursor: default !important;
+  pointer-events: none;
+}

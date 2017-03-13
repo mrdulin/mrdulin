@@ -1,0 +1,27 @@
+.ui-tabs{
+	@include display-flex();
+	background-color: #fff;
+	border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 44px;
+    line-height: 44px;
+	
+	.ui-tab{
+		position: relative;
+		@include flex(1);
+		text-align: center;
+
+	    &.active{
+	    	a {
+	    		color: #ff6f00;
+	    		font-weight: bold;
+	    	}
+	    	border-bottom: 2px solid #ff6f00;
+	    }
+
+		> a{
+	   	 	font-size: 14px;
+    		color: #212121;
+		}
+	}
+}

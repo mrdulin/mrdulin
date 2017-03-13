@@ -1,0 +1,88 @@
+.ui-panel {
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: #fff;
+    @for $i from 1 through 6 {
+		h#{$i} {
+            font-size: 19px - $i;
+            font-weight: 400;
+		}
+
+        h#{$i}.ui-panel-title {
+        	@include display-flex();
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 40px;
+
+            > span {
+            	display: block;
+            }
+        }
+    }
+
+    &-subtitle{
+    	margin-left: 10px;
+    	color: #777;
+    	font-size: 14px;
+    }
+
+    &-arrowlink{
+    	position: absolute;
+    	right: 15px;
+    	color: #999999;
+    	font-size: 14px;
+    }
+
+    &-xscroll-container {
+    	overflow-x: auto;
+    	padding-left: 10px;
+    }
+
+    &-xscroll-item-content{
+		width: 105px;
+    }
+
+    &-xscroll-item-title{
+    	@include text-overflow();
+    }
+
+    &-xscroll-list{
+    	@include clearfix();
+    	margin-bottom: 10px;
+    	li {
+    		position: relative;
+    		float: left;
+			margin-right: 10px;
+    	}
+
+    	img{
+    		height: 105px;
+    	}
+    }
+
+    &-floor{
+    	height: 200px;
+    	@include display-flex();
+    	&-left{
+    		border-right: 1px solid #ddd;
+    		border-top: 1px solid #ddd;
+    	}
+
+		&-left, &-right{
+			@include flex(1, 1, 50%);
+		}
+
+		&-right{
+			@include display-flex();
+			@include flex-direction(column);
+			border-top: 1px solid #ddd;
+			&-top{
+				border-bottom: 1px solid #ddd;
+			}
+			&-top, &-bottom{
+				@include flex(1, 1, 50%);
+			}
+		}
+    }
+}

@@ -1,0 +1,105 @@
+// Colors
+// -------------------------------
+$dark:                            #333 !default;
+$dark-second:                     #666 !default;
+$dark-three: 					  #999 !default;	
+$dark-four:						  #ccc !default;
+$dark-five: 				      #e0e0e0 !default;
+
+$light:                           #fff !default;
+$stable:                          #f0f0f0 !default;
+$positive:                        #1faaf1 !default;
+$energized:                       #ff6f00 !default;
+$assertive:                       #ff0000 !default;
+
+// Base
+// -------------------------------
+
+$font-family-sans-serif:           '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+
+$font-family-light-sans-serif:    '-apple-system', "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$font-family-serif:               serif !default;
+$font-family-monospace:           monospace !default;
+
+$font-family-base:                $font-family-sans-serif !default;
+$font-size-base:                  14px !default;
+$font-size-large:                 18px !default;
+$font-size-small:                 11px !default;
+
+$line-height-base:                1.428571429 !default; // 20/14
+$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
+$line-height-large:               1.33 !default;
+$line-height-small:               1.5 !default;
+
+$headings-font-family:            $font-family-base !default;
+$headings-font-weight:            500 !default;
+$headings-line-height:            1.2 !default;
+
+$base-background-color:           #fff !default;
+$base-color:                      #000 !default;
+
+$link-color:                      $positive !default;
+$link-hover-color:                darken($link-color, 15%) !default;
+
+$content-padding:                 10px !default;
+
+$padding-base-vertical:           6px !default;
+$padding-base-horizontal:         12px !default;
+
+$padding-large-vertical:          10px !default;
+$padding-large-horizontal:        16px !default;
+
+$padding-small-vertical:          5px !default;
+$padding-small-horizontal:        10px !default;
+
+$border-radius-base:              4px !default;
+$border-radius-large:             6px !default;
+$border-radius-small:             3px !default;
+
+
+// Grids
+// -------------------------------
+
+$grid-padding-width:              10px !default;
+
+// Buttons
+// -------------------------------
+
+$button-color:                    #222 !default;
+$button-block-margin:             10px !default;
+$button-clear-padding:            6px !default;
+$button-border-radius:            4px !default;
+$button-border-width:             1px !default;
+
+$button-font-size:                16px !default;
+$button-height:                   42px !default;
+$button-padding:                  12px !default;
+$button-icon-size:                24px !default;
+
+$button-bar-button-font-size:     13px !default;
+$button-bar-button-height:        32px !default;
+$button-bar-button-padding:       8px !default;
+$button-bar-button-icon-size:     20px !default;
+
+$button-light-bg:                 $light !default;
+$button-light-text:               #444 !default;
+$button-light-border:             #ddd !default;
+$button-light-active-bg:          #f0f0f0 !default;
+$button-light-active-border:      #ccc !default;
+$button-light-active-text: 		  $dark-second !default;
+
+$button-energized-bg:             $energized !default;
+$button-energized-text:           #fff !default;
+$button-energized-border:         darken($energized, 5%) !default;
+$button-energized-active-bg:      darken($energized, 5%) !default;
+$button-energized-active-border:  darken($energized, 5%) !default;
+$button-energized-active-text:    $stable !default;
+
+$button-default-bg:               $button-light-bg !default;
+$button-default-text:             $button-light-text !default;
+$button-default-border:           $button-light-border !default;
+$button-default-active-bg:        $button-light-active-bg !default;
+$button-default-active-border:    $button-light-active-border !default;
+$button-default-active-text: 	  $button-light-active-text !default;
+
+
