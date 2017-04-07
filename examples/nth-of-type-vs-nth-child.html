@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .demo-1 p:nth-child(2){
+      color: red;
+    }
+
+    .demo-2 p:nth-of-type(2) {
+      color: red;
+    }
+
+    .demo-3 p:nth-child(2) {
+      color: green;
+    }
+
+    .demo-4 p:nth-of-type(2) {
+      color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <section class='demo-1'>
+    <p>fxxk</p>
+    <p>fxxk off</p>
+  </section>
+  <hr>
+  <section class='demo-2'>
+    <p>fxxk</p>
+    <p>fxxk off</p>
+  </section>
+  <hr>
+  <section>
+    <p>本例中，:nth-child(2) 选择器的含义是:</p>
+    <p>1. 是段落元素 p</p>
+    <p>2. 是其父元素的第二个元素</p>
+
+    <p>本例中，:nth-of-type(2) 选择器的含义是：</p>
+    <p>1. 选择其父元素的第二个段落元素</p>
+  </section>
+  <hr>
+  <p>下面是demo-3和demo-4，需要"fxxk off"变成绿色</p>
+  <section class='demo-3'>
+    <h1>shit</h1>
+    <p>fxxk</p>
+    <p>fxxk off</p>
+  </section>
+  <hr>
+  <section class='demo-4'>
+    <h1>shit</h1>
+    <p>fxxk</p>
+    <p>fxxk off</p>
+  </section>
+  <hr>
+  <section>
+    <p>demo-3 中，:nth-child(2) 选择器，选择了错误的段落元素"fxxk"，因为它满足两个条件：1. 是段落元素; 2.是其父元素的第二个元素。</p>
+    <p>demo-4 中，:nth-of-type(2) 选择器，选择的段落元素依旧正确。</p>
+  </section>
+</body>
+</html>

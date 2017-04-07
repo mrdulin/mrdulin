@@ -1,0 +1,21 @@
+root = true
+
+# 团队成员各自安装自己编辑器/IDE的editorconfig插件
+# editorconfig插件会读取该文件用作代码风格统一
+
+[*]
+# 每次输入tab会被space代替
+indent_style = space
+indent_size = 2
+
+# 换行符
+end_of_line = lf
+
+# 设置文件编码 vscode editorconfig extenstion 不支持
+# charset = utf-8
+
+# 是否在文件尾部添加一个换行
+insert_final_newline = true
+
+# 是否除去每行代码后的多余空格
+trim_trailing_whitespace = true
