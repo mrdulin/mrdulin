@@ -18,7 +18,8 @@
     }
 
     .search-form{
-      margin-top: 20px;
+      margin: 20px 0;
+      overflow: hidden;
     }
 
     .search-label {
@@ -32,10 +33,10 @@
       height: 30px;
       border-radius: 15px;
       padding: 0 120px 0 30px;
-      box-sizing: border-box !important;
-      border: 1px solid #ddd !important;
-      color: #212121 !important;
-      -webkit-appearance: none !important;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      color: #212121;
+      -webkit-appearance: none;
       overflow: hidden;
       outline: none;
     }
@@ -50,13 +51,14 @@
       margin: auto;
       height: 20px;
     }
+
   </style>
 </head>
 
 <body>
   <form class='search-form'>
     <label class="search-label">
-      <input type="text" class="search-input">
+      <input type="text" class="search-input" placeholder="输入搜索内容"/>
       <p class='search-result-count'>100条结果</p>
     </label>
   </form>
@@ -66,7 +68,8 @@
   <p>问题：在手机浏览器中(IOS safari)存在当点击搜索结果元素时(p元素)，input元素会聚焦，但是会出现光标在输入的文字左侧的问题。</p>
   <p>在PC浏览器chrome, safari中, android(小米 4 android 6.0.1)浏览器(自带，chrome)是没问题的。</p>
 
-  <p>解决方案：</p>
+  <hr>
+  <p>解决方案：使用拼接的方式实现</p>
 </body>
 
 </html>
