@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    img{
+      width: 100px;
+    }
+    .demo-1 > img{
+      /*display: block;*/
+      /*display: table;*/
+      /*display: flex;*/
+      display: inherit;
+    }
+
+    .demo-2{
+      overflow: hidden;
+    }
+    .demo-2 > img{
+      float: left;
+    }
+
+    .demo-3{
+      font-size: 0;
+    }
+    .demo-4{
+      line-height: 0;
+    }
+
+    .demo-5 > img{
+      /*vertical-align: top;*/
+      /*vertical-align: bottom;*/
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <p>图片和父容器有几px的间隙</p>
+  <div>
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+  <p>img - display</p>
+  <div class='demo-1'>
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+  <p>float</p>
+  <div class="demo-2">
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+  <p>font-size</p>
+  <div class="demo-3">
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+  <p>line-height</p>
+  <div class="demo-4">
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+  <p>vertical-align</p>
+  <div class="demo-5">
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/image/2.jpg" alt="">
+  </div>
+  <hr>
+
+  <p>默认地，图片是 inline 元素, 由于 baseline 的原因导致的。</p>
+  <p>详见
+    <a href="http://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image">http://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image</a>
+  </p>
+</body>
+</html>
