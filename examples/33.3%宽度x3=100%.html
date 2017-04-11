@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .tabs{
+      background: #83766D;
+      color: #fff;
+      overflow: hidden;
+    }
+    .tab{
+      float: left;
+      padding: 10px 0;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .tab:not(:last-child) {
+      border-right: 1px solid #fff;
+    }
+
+    .tab.active{
+      background: #ff4500;
+    }
+
+    .wp33{
+      width: 33.333333%;
+    }
+
+    .calc-wp33{
+      width: calc(100% / 3);
+    }
+
+    .flex{
+      display: flex;
+    }
+    .flex-1{
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <p>javascript</p>
+  <div class='tabs' id='js-tabs'>
+    <div class="tab">react</div>
+    <div class="tab">angular</div>
+    <div class="tab active">jquery</div>
+  </div>
+  <p>width: 33.33%</p>
+  <div class='tabs'>
+    <div class="tab wp33">react</div>
+    <div class="tab wp33">angular</div>
+    <div class="tab wp33 active">jquery</div>
+  </div>
+  <p>calc(100% / 3)</p>
+  <div class='tabs'>
+    <div class="tab calc-wp33">react</div>
+    <div class="tab calc-wp33">angular</div>
+    <div class="tab calc-wp33 active">jquery</div>
+  </div>
+  <p>flex</p>
+  <div class='tabs flex'>
+    <div class="tab flex-1">react</div>
+    <div class="tab flex-1">angular</div>
+    <div class="tab flex-1 active">jquery</div>
+  </div>
+  <script>
+    window.onload = init;
+
+    function init() {
+      var doc = document;
+      var dom_tabs = doc.querySelectorAll('#js-tabs .tab');
+
+      for(var i = 0; i < dom_tabs.length; i++) {
+        var dom_tab = dom_tabs[i];
+        dom_tab.style.width = 100 / 3 + '%';
+      }
+    }
+  </script>
+</body>
+</html>
