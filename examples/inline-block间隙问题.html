@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-        #container{
-            width: 300px;
-            /*消除inline-block间隙*/
-            font-size: 0;
-        }
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .demo-1 {
+      width: 300px;
+      /*消除inline-block间隙*/
+      font-size: 0;
+    }
 
-        .item{
-            display: inline-block;
-            width: 50%;
-            height: 100px;
-          
-            box-sizing: border-box;
-            padding: 2px;
-        }
+    .item {
+      display: inline-block;
+      width: 50%;
+      height: 100px;
+      box-sizing: border-box;
+      padding: 2px;
+    }
 
-        .item > img{
-            display: block;
-            background-color: lightblue;
-            height: 100%;
-        }
-    </style>
+    .item>img {
+      display: block;
+      background-color: lightblue;
+      height: 100%;
+    }
+
+    .button {
+      border: 1px solid #ff6f00;
+      max-width: 180px;
+      margin: 0 auto;
+      border-radius: 25px;
+      line-height: 36px;
+      color: #ff6f00;
+      font-size: 16px;
+      display: inline-block;
+      padding: 0 20px;
+    }
+
+    .button-ctn {
+      background-color: #fff;
+      margin-top: -1px;
+      border-radius: 10px;
+    }
+
+    .modal-footer {
+      height: 45px;
+      text-align: center;
+      color: #ff5722;
+      line-height: normal !important;
+      padding-bottom: 18px;
+    }
+  </style>
 </head>
+
 <body>
-    <div id='container'>
-        <div class="item">
-            <img src="" alt="">
-        </div>
-        <div class="item">
-             <img src="" alt="">
-        </div>
-        <div class="item">
-             <img src="" alt="">
-        </div>
-        <div class="item"> 
-            <img src="" alt="">
-        </div>
+  <div class='demo-1'>
+    <div class="item">
+      <img src="" alt="">
     </div>
+    <div class="item">
+      <img src="" alt="">
+    </div>
+    <div class="item">
+      <img src="" alt="">
+    </div>
+    <div class="item">
+      <img src="" alt="">
+    </div>
+  </div>
+  <hr>
+  <div class='demo-2'>
+    <div class='modal-footer'>
+      <div class='button-ctn'>
+        <div class='button'>如何快速获取碎片</div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
