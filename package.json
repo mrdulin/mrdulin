@@ -25,5 +25,8 @@
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.2",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "babel-standalone": "^6.24.0"
   }
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      padding: 5%;
+    }
+    ul{
+      list-style-type: none;
+    }
+
+    .list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .list > li{
+      border: 1px solid #ddd;
+      color: #666;
+      padding: 0 6px;
+      margin: 0 10px 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <ul class='list'></ul>
+
+  <script src="../../node_modules/babel-standalone/babel.min.js"></script>
+  <script type='text/babel'>
+    window.onload = init;
+
+    function init() {
+      const doc = document;
+      const domList = doc.querySelector('.list');
+      const fragment = doc.createDocumentFragment();
+      const weightFactors = [3,1,-3,2,3,4,5,6,7,8];
+
+      for(let i = 0; i < 10; i++) {
+        const domItem = doc.createElement('li');
+        const itemLabel = doc.createTextNode(`text-${i} (weight factor = ${weightFactors[i]})`);
+        domItem.appendChild(itemLabel);
+
+        domItem.style.order = weightFactors[i];
+
+        fragment.appendChild(domItem);
+      }
+
+      domList.appendChild(fragment);
+    }
+  </script>
+</body>
+</html>

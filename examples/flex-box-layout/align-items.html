@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      background-color: aqua;
+      width: 100px;
+    }
+
+    li~li {
+      margin-left: 10px;
+    }
+
+    ul {
+      width: 400px;
+      height: 300px;
+      background-color: black;
+    }
+
+    .display-flex {
+      display: flex;
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+
+    .flex-start {
+      align-items: flex-start;
+    }
+
+    .flex-end{
+      align-items: flex-end;
+    }
+
+    .center{
+      align-items: center;
+    }
+
+    .baseline{
+      align-items: baseline;
+    }
+
+    .h40{height: 40px;}
+    .h100{height: 100px;}
+    .h150{height: 150px;}
+    .h120{height: 120px;}
+
+    .fz12{font-size: 12px;}
+    .fz16{font-size: 16px;}
+    .fz20{font-size: 20px;}
+    .fz18{font-size: 18px;}
+  </style>
+</head>
+
+<body>
+  <div id='stretch'>
+    <p>align-items: stretch(默认值)</p>
+    <ul class='display-flex stretch'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div id='flex-start'>
+    <p>align-items: flex-start</p>
+    <ul class='display-flex flex-start'>
+      <li class="h40"></li>
+      <li class="h100"></li>
+      <li class="h150"></li>
+      <li class="h120"></li>
+    </ul>
+  </div>
+
+  <div id='flex-end'>
+    <p>align-items: flex-end</p>
+    <ul class='display-flex flex-end'>
+      <li class="h40"></li>
+      <li class="h100"></li>
+      <li class="h150"></li>
+      <li class="h120"></li>
+    </ul>
+  </div>
+
+  <div id='center'>
+    <p>align-items: center</p>
+    <ul class='display-flex center'>
+      <li class="h40"></li>
+      <li class="h100"></li>
+      <li class="h150"></li>
+      <li class="h120"></li>
+    </ul>
+  </div>
+
+  <div id='baseline'>
+    <p>align-items: baseline</p>
+    <ul class='display-flex baseline'>
+      <li class="h40 fz12">text</li>
+      <li class="h100 fz16">text</li>
+      <li class="h150 fz20">text</li>
+      <li class="h120 fz18">text</li>
+    </ul>
+  </div>
+</body>
+
+</html>
