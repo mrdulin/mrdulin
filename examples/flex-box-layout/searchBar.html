@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flex {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .flex-1 {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+
+    .flex-center {
+      -webkit-box-pack: center;
+      -moz-justify-content: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .left {
+      width: 52px;
+      height: 44px;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+    }
+    .right{
+          overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    form {
+      position: relative;
+      font-size: 14px;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    form>label {
+      position: relative;
+      display: block;
+      height: 100%;
+    }
+
+    form > label > input{
+      box-sizing: content-box;
+    }
+
+    input {
+      width: 100%;
+      height: 30px;
+      border-radius: 15px;
+      padding: 0 120px 0 30px;
+      box-sizing: border-box !important;
+      border: 1px solid #ddd;
+      color: #212121;
+      -webkit-appearance: none;
+      overflow: hidden;
+      margin: 0;
+      outline-offset: 0;
+      outline-style: none;
+      outline-width: 0;
+      -webkit-font-smoothing: inherit;
+      background-image: none;
+    }
+
+    .delete {
+      height: 20px;
+      width: 20px;
+      right: 10px;
+      margin-top: -10px;
+      z-index: 10;
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      background-position: 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEUAAAC9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb1c1lZGAAAAGXRSTlMAJvMPBecx072iS4OTYBaYYoIT2bppUTkqu4aY4wAAAMdJREFUKM+Fk9kSgyAMRSOICKVYly73/3+0U5KhcRk9Tw4nZJIYqGLj4I3xQ7S0pelR6ZuVagNWhFZlnLFhrrkngx1mkpwOBzjOHMp32tpQ6pS4DsKn5cBfzaWHhahYPpu4IyLLR3e2HH/jM0sRyrIbwURK0JbvCYk8tNUOngy01Q5GyzLvTkuv3dp6StqND20TRe0AbSMPofbO9i1DkPE5dmKtjE8Gj1dbe3jm5V9gwCHh+mdTPlqTTEJ2u3v5bDWvl/r0OXwBY/gvDoshqZcAAAAASUVORK5CYII=)
+    }
+
+    .count {
+      position: absolute;
+      top: 0;
+      right: 36px;
+      color: #999;
+      bottom: 0;
+      line-height: normal;
+      margin: auto;
+      height: 20px;
+    }
+
+    .fix-bar {
+      position: fixed;
+      z-index: 99999;
+      text-align: center;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .icon{
+          position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+        left: 8px;
+    margin-top: -8px;
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEUAAAC9vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb29vb1c1lZGAAAAGXRSTlMABLYS6+HIijksr34okg7zuvXSoHwqBr5cM1y6gQAAAK5JREFUKM+1kkkOwyAQBAEbMIvBS+yk///RoGgUtohb6tRSWR5ohhHGqTgLZ1jPIkHIpVHcAvriKVwasLxyCmJixCSgSntiLb9dcRbzIOopAnmuRKhlgPzeAZo1aBhKD/hWejhKCryVHIpSBOtApDCP5Ib7x2+HBxpeZVzCuD7CtsXb8nBH/WQQ3WP7VNTtNWDnbPs1mZKlSvOC7bv6LFi2HWS3v9nnyOZuesLxegNYYgrJRkI5KAAAAABJRU5ErkJggg==)
+    }
+  </style>
+</head>
+
+<body>
+  <div class='fix-bar'>
+    <div class='flex flex-center'>
+      <div class='left'></div>
+      <div class='right flex-1'>
+        <div>
+          <form>
+
+            <label>
+              <i class='icon'></i>
+              <input type="text" placeholder="输入内容进行搜索">
+              <div class='count'>911结果</div>
+            </label>
+            <a class='delete'></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
