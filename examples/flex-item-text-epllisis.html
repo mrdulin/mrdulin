@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex项目中的文本省略号</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #demo{
+      display: flex;
+      border: 1px solid #ddd;
+    }
+
+    .item-l{
+      flex: 0 1 auto;
+    }
+
+    .avatar{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #eee;
+      overflow: hidden;
+    }
+
+    .avatar > img{
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .item-r{
+      flex: 1;
+      /*关键样式*/
+      min-width: 0;
+    }
+
+    .intro{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 12px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+  <section id='demo'>
+    <div class='item-l'>
+      <div class='avatar'>
+        <img src="http://avatars.io/twitter/novaline" alt="avatar">
+      </div>
+    </div>
+    <div class='item-r'>
+      <p class='intro'>但当空间不足时，伸缩项目可收缩至其最小值。网页作者可以用对齐相关的属性以及margin属性的auto值控制伸缩项目沿着主轴的对齐方式。著作权归作者所有。</p>
+    </div>
+  </section>
+</body>
+</html>
