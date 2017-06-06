@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .list {
+      overflow: hidden;
+      list-style: none;
+    }
+
+    #container {
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    .list>li {
+      float: left;
+      box-sizing: border-box;
+    }
+
+    .list>li:not(:last-child) {
+      padding-right: 15px;
+    }
+
+    .list>li>div {
+      width: 121px;
+      height: 68px;
+      background-color: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='container'>
+    <ul class='list'>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    window.onload = init;
+    function init() {
+      var ITEM_WIDTH = 121;
+      var ITEM_GAP = 15;
+      var ITEM_COUNT = 5;
+      var doc = document;
+      var dom_container = doc.getElementById('container');
+
+      dom_container.style.width = ITEM_COUNT * (ITEM_WIDTH + ITEM_GAP) + 'px';
+
+    }
+  </script>
+</body>
+
+</html>
