@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    h1 {
+      position: relative;
+    }
+
+    h1:hover {
+      color: transparent;
+    }
+
+    h1:hover:after {
+      content: attr(data-hover-response);
+      color: black;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 data-hover-response="I Said Don't Touch Me!"> Don't Touch Me  </h1>
+</body>
+
+</html>

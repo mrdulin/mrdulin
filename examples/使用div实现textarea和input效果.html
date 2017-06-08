@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    textarea,
+    input,
+    #textarea,
+    #input{
+      width: 200px;
+      height: 28px;
+    }
+    #textarea{
+      -webkit-appearance: textarea;
+      font: -webkit-small-control;
+      border: 1px solid #ddd;
+      padding: 2px;
+      resize: auto;
+      overflow: auto;
+    }
+
+    #input{
+      display: inline-block;
+      -webkit-appearance: textfield;
+      border: 1px solid #ddd;
+      padding: 1px;
+      font: 11px system-ui;
+      background-color: #fff;
+      line-height: 28px;
+    }
+  </style>
+</head>
+<body>
+  <textarea></textarea>
+  <div id='textarea' contenteditable></div>
+  <hr/>
+  <input type="text" value="development">
+  <div id='input' contenteditable>development</div>
+</body>
+</html>
