@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cavans simple demos</title>
+</head>
+<body>
+<!-- 如果浏览器不支持Canvas，则自动跳过Canvas而运行Canvas内部的html代码 -->
+<canvas id="myCanvas" width="960" height="1000">
+    你的浏览器不支持HTML5
+</canvas>
+<script>
+    document.addEventListener('DOMContentLoaded', start);
+    function start() {
+//        drawLine();
+//        drawRect();
+//        drawCircle();
+//        drawRoundRect();
+        clearCanvas();
+    }
+
+    /**
+     * 画线
+     * myCanvas表示html中的canvas元素
+     * myCanvas.getContext('2d')表示获得CanvasRenderingContext2D对象，该对象实现了一个画布所使用的大多数方法。
+     * 目前，Canvas只支持二维环境，所以参数只能是'2d'。
+     *
+     * CanvasRenderingContext2D
+     * lineWidth属性，设置线条宽度
+     * lineCap属性，设置线帽样式，如 'butt','round','square'
+     * strokeStyle属性，设置画笔颜色，颜色可以是rgba,英文字母或'#ddd'形式
+     * beginPath函数，创建一个新的路径，相当于我把画笔放到画布上，准备开始画了，但还没动。
+     * moveTo函数，将画笔光标位置移动到坐标(10, 10)处
+     * lineTo函数，从当前坐标开始移动画笔到坐标(150, 50)处，绘制一条直线
+     * stroke函数，开始绘制定义好的路径。注意，执行stroke函数后，相当于我画完了，把画笔从画布上拿开了。
+     * 因此，每次我要画的时候，可以先选选画笔的颜色(设置strokeStyle)，选选线帽样式(设置lineCap)，
+     * 选选画笔的粗细(设置lineWidth)，然后我把笔尖放到画布上准备开始(执行beginPath函数并把笔尖放在在moveTo函数指定的坐标处)，
+     * 画条线(lineTo(150, 50))，画完了，把笔尖从画布上拿开(执行stroke函数)。如果还要画，那么重新执行上述步骤。
+     */
+    function drawLine() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        ctx.lineWidth = 10;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = 'red';
+        ctx.beginPath();
+        ctx.moveTo(10, 10);
+        ctx.lineTo(150, 50);
+        ctx.stroke();
+    }
+
+    /**
+     * 画矩形
+     * strokeRect函数的4个参数分别是；分别是起点坐标x和坐标y，矩形长，矩形宽
+     * fillRect函数的4个参数分别是：分别是起点坐标x和坐标y，矩形长，矩形宽
+     * fillStyle属性，填充颜色
+     */
+    function drawRect() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#342f41';
+        ctx.beginPath();
+        ctx.strokeRect(10, 10, 70, 40);
+        //使用下面这种方式也可以实现同样的功能
+        ctx.rect(10, 60, 70, 40);
+        ctx.stroke();
+        //绘制一个实心（被颜色填充）的矩形
+        ctx.fillStyle = '#b42958';
+        ctx.beginPath();
+        ctx.fillRect(10, 110, 70, 40);
+        //使用下面这种方式也可以实现同样的功能
+        ctx.rect(10, 160, 70, 40);
+        ctx.fill();
+    }
+
+    /**
+     * 画圆
+     * 圆其实就是一个360度的圆弧。再Canvas中，可使用arc函数来画一个圆弧。
+     * arc函数的6个参数分别是：圆弧中心的坐标x和坐标y，圆弧半径，起始角度(弧度)，终止角度(弧度)，是否逆时针
+     * 弧度：要画30度的角，需要将其转化成弧度30 * Math.PI / 180的弧度，圆的弧度是 360 * Math.PI / 180 = 2π;
+     * 是否逆时针：用来控制画笔是逆时针画，还是顺时针画。
+     */
+    function drawCircle() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#ee5a68';
+        ctx.beginPath();
+        ctx.arc(100, 100, 70, 0, 130 * Math.PI / 180, true);
+        ctx.stroke();
+        //和画矩形一样，同样可以用fill函数来画一个实心的圆弧
+        ctx.fillStyle = '#b42958';
+        ctx.beginPath();
+        ctx.arc(100, 300, 70, 0, 130 * Math.PI / 180, false);
+        ctx.fill();
+        //画圆时，只需要让起始角度和终止角度之差为360度即可
+        ctx.fillStyle = '#b42958';
+        ctx.beginPath();
+        ctx.arc(100, 500, 70, 0, 2 * Math.PI, false);
+        ctx.fill();
+    }
+
+    /**
+     * 画圆角矩形
+     * canvas中没有直接画圆角矩形的API，但是我们可以用arcTo函数来完成圆角的绘制，然后结合直线绘制，
+     * 就可以完成圆角矩形的绘制了。
+     * arcTo函数5个参数分别是：点P1的坐标X和坐标Y，点P2的坐标X和坐标Y，圆弧的半径radius。
+     * P1和P2点与圆弧的切点就是圆弧的起点和终点，见img文件夹中roundRect.png图片说明，
+     * 圆弧绘制的方向就是连接这两个点的最短圆弧的方向。
+     */
+    function drawRoundRect() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        ctx.strokeStyle = '#f09b71';
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.lineTo(70, 20);
+        ctx.arcTo(120, 30, 120, 70, 50);
+        ctx.lineTo(120, 120);
+        ctx.stroke();
+
+        //绘制一个完整的圆角矩形
+        ctx.moveTo(20, 50);
+        ctx.lineTo(100, 50);
+        ctx.arcTo(120, 50, 120, 70, 20);
+        ctx.lineTo(120, 140);
+        ctx.arcTo(120, 160, 100, 160, 20);
+        ctx.lineTo(20, 160);
+        ctx.arcTo(0, 160, 0, 140, 20);
+        ctx.lineTo(0, 70);
+        ctx.arcTo(0, 50, 20, 50, 20);
+        ctx.stroke();
+    }
+
+    /**
+     * 擦除canvas画布
+     * 用到clearRect函数，此函数可以擦除一个矩形区域。4个参数：起点坐标X和坐标Y，擦除区域的长和宽。
+     */
+    function clearCanvas(){
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        ctx.fillStyle = '#c9c57b';
+        ctx.beginPath();
+        ctx.fillRect(10, 10, 200, 200);
+        ctx.clearRect(40, 40, 40, 40);
+    }
+</script>
+</body>
+</html>

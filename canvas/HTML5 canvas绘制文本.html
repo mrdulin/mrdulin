@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text canvas demo</title>
+</head>
+<body>
+<canvas id="myCanvas" width="960" height="1000"></canvas>
+<script>
+    document.addEventListener('DOMContentLoaded', start);
+    function start() {
+//        drawText();
+        drawAlignText();
+    }
+
+    /**
+     * 绘制文本
+     * canvas的API中，只能显示绘制文字，无法直接绘制一个输入框
+     * strokeText(text, x, y, maxWidth)函数的4个参数分别是：文本字符串，坐标X和坐标Y，文本宽
+     * 坐标原点在文本的左下角，第4个参数可以省去，当第4个参数省去的时候，文本宽度会自动设定为整个文本的宽度
+     * fillText函数，与strokeText函数用法完全相同
+     * font属性，设置文字大小、字体，字重，斜体
+     */
+    function drawText() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+
+        ctx.font = '30px Microsoft YaHei';
+        ctx.strokeText('HTML5 canvas', 10, 40);
+
+        ctx.font = '16px Microsoft YaHei';
+        ctx.fillText('go home', 10 , 80);
+
+        ctx.font = '22px Microsoft YaHei';
+        ctx.fillText('work hard', 10 , 100);
+
+        //设置文字的font-weight属性
+        ctx.font = 'bold 18px Microsoft YaHei';
+        ctx.fillText('I\'m hungry', 300, 40);
+
+        //设置文字的font-style属性
+        ctx.font = 'italic bolder 20px Microsoft YaHei';
+        ctx.fillText('it\'s time to go home', 300, 80);
+    }
+
+    /**
+     * 文字的对齐方式
+     * canvas中的文字通过textAlign和textBaseline来实现文字的对齐。
+     * textAlign是水平方向的文字对齐，它的值包括 center,end,left,right,start
+     * textBaseline是竖直方向的文字对齐，它的值包括 alphabetic(译：拼音),bottom,hanging,ideographic(译：表意的),middle,top
+     */
+    function drawAlignText() {
+        var myCanvas = document.getElementById('myCanvas'),
+                ctx = myCanvas.getContext('2d');
+        //水平方向对齐方式
+        ctx.moveTo(160, 0);
+        ctx.lineTo(160, 300);
+        ctx.stroke();
+
+        ctx.font = '20px Arial';
+
+        ctx.textAlign = 'start';
+        ctx.fillText('HTML5 canvas', 160, 50);
+
+        ctx.textAlign = 'end';
+        ctx.fillText('HTML5 canvas', 160, 100);
+
+        ctx.textAlign = 'left';
+        ctx.fillText('HTML5 canvas', 160, 150);
+
+        ctx.textAlign = 'right';
+        ctx.fillText('HTML5 canvas', 160, 200);
+
+        ctx.textAlign = 'center';
+        ctx.fillText('HTML5 canvas', 160, 250);
+
+        //竖直方向对齐方式
+        ctx.moveTo(10, 400);
+        ctx.lineTo(410, 400);
+        ctx.stroke();
+        ctx.textBaseline = 'alphabetic';
+        ctx.fillText('(textBaseline alphabetic)', 200, 400);
+
+        ctx.moveTo(10, 450);
+        ctx.lineTo(410, 450);
+        ctx.stroke();
+        ctx.textBaseline = 'bottom';
+        ctx.fillText('(textBaseline bottom)', 200, 450);
+
+        ctx.moveTo(10, 500);
+        ctx.lineTo(410, 500);
+        ctx.stroke();
+        ctx.textBaseline = 'hanging';
+        ctx.fillText('(textBaseline hanging)', 200, 500);
+
+        ctx.moveTo(10, 550);
+        ctx.lineTo(410, 550);
+        ctx.stroke();
+        ctx.textBaseline = 'ideographic';
+        ctx.fillText('(textBaseline ideographic)', 200, 550);
+
+        ctx.moveTo(10, 600);
+        ctx.lineTo(410, 600);
+        ctx.stroke();
+        ctx.textBaseline = 'middle';
+        ctx.fillText('(textBaseline middle)', 200, 600);
+
+        ctx.moveTo(10, 650);
+        ctx.lineTo(410, 650);
+        ctx.stroke();
+        ctx.textBaseline = 'top';
+        ctx.fillText('(textBaseline top)', 200, 650);
+
+    }
+</script>
+</body>
+</html>

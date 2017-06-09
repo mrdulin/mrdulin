@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>image canvas demo</title>
+    <style>
+        #myCanvas{
+            border: 1px solid #619FF2;
+        }
+    </style>
+</head>
+<body>
+<img id="myImg" src="../img/2.jpg" width="245" height="200"/>
+<img id="myImg3" src="" alt=""/>
+<canvas id="myCanvas" width="960" height="1000"></canvas>
+<script>
+    window.addEventListener('load', start);
+    function start() {
+        drawCanvasImage();
+    }
+
+    /**
+     * 绘制图片
+     * canvas中提供了drawImage和putImageData函数来绘制图片
+     * drawImage函数有3种函数原型:
+     * 1.drawImage(image, dx, dy);
+     * 2.drawImage(image, dx, dy, dw, dh);
+     * 3.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
+     * 第一个参数image是要绘制的对象，这个参数可以是HTMLImageElement,HTMLCanvasElement,HTMLVideoElement
+     * dx,dy是image在canvas中定位的坐标，dw,dh表示image在canvas中即将绘制的区域(相对dx和dy的坐标偏移量)的宽度和高度
+     * sx,sy是image绘制的起始位置，sw,sh表示image绘制区域(相对image的sx,sy坐标的偏移量)的宽度和高度
+     *
+     * 注意：必须等图片onload事件完成后，使用drawImage函数才能将图片绘制到canvas中。
+     */
+    function drawCanvasImage() {
+        var myCanvas = document.getElementById('myCanvas'),
+                img = new Image(),
+                myImg = document.getElementById('myImg'),
+                myImg3 = document.getElementById('myImg3'),
+                ctx = myCanvas.getContext('2d');
+        //第一种方式
+        img.onload = function() {
+            console.log('image loaded');
+            ctx.drawImage(img, 10, 10);
+        };
+        img.src = '../img/1.jpg';
+
+        //第二种方式
+        ctx.drawImage(myImg, 10, 300);
+
+        //第三种方式
+        myImg3.onload = function() {
+            ctx.drawImage(myImg3, 300, 10);
+        };
+        myImg3.src = '../img/3.jpg';
+    }
+</script>
+</body>
+</html>
