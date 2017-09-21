@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .media {
+      display: flex;
+
+      border: 1px solid #ddd;
+      width: 300px;
+    }
+
+    .media.start {
+      align-items: flex-start;
+    }
+
+    .media.center {
+      align-items: center;
+    }
+
+    .media.end {
+      align-items: flex-end;
+    }
+
+    .media-figure {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      background: #ddd;
+    }
+
+    .media-body {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>1</h2>
+  <div class="media start">
+    <img class='media-figure' src="" alt="">
+    <p class="media-body">文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+  </div>
+  <h2>2</h2>
+  <div class="media center">
+    <img class='media-figure' src="" alt="">
+    <p class="media-body">文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+  </div>
+  <h2>3</h2>
+  <div class="media end">
+    <img class='media-figure' src="" alt="">
+    <p class="media-body">文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+  </div>
+
+</body>
+
+</html>

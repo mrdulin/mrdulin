@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>输入附加组件</title>
+  <style>
+    .input-addon {
+      display: flex;
+    }
+
+    .input-addon-item,
+    .input-addon-field {
+      border: 1px solid #ddd;
+      padding: 6px 10px;
+    }
+
+    .input-addon-item {
+      background: #ddd;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>前置附加组件</h2>
+  <div class='input-addon'>
+    <span class="input-addon-item">数量</span>
+    <input type="text" class='input-addon-field' />
+  </div>
+
+  <h2>后置附加组件</h2>
+  <div class='input-addon'>
+    <input type="text" class='input-addon-field' />
+    <span class="input-addon-item">恩恩</span>
+  </div>
+</body>
+
+</html>

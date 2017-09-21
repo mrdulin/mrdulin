@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .site {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .site-body {
+      padding: 10px;
+      display: flex;
+      flex: 1;
+    }
+
+    .site-content {
+      flex: 1;
+    }
+
+    .site-nav,
+    .site-ads {
+      flex: 0 0 12em;
+      background-color: #ccc;
+    }
+
+    .site-nav {
+      order: -1;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #ccc;
+    }
+
+    footer {
+      padding: 20px;
+      background: #666;
+    }
+  </style>
+</head>
+
+<body class="site">
+  <header>header</header>
+  <div class='site-body'>
+    <main class='site-content'>
+      content
+    </main>
+    <nav class='site-nav'>nav</nav>
+    <aside class="site-ads">aside</aside>
+  </div>
+  <footer>footer</footer>
+</body>
+
+</html>

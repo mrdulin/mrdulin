@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sticky-footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .site {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .site-content {
+      padding: 1.5em;
+      flex: 1;
+      text-align: center;
+    }
+
+    header {
+      padding: 1.5em;
+      background-color: hsla(31, 15%, 50%, .1);
+      text-align: center;
+    }
+
+    footer {
+      padding: 1.5em;
+      background-color: #666;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class='site'>
+  <header>header</header>
+  <main class='site-content'>content</main>
+  <footer>
+    footer高度不固定
+  </footer>
+</body>
+
+</html>
