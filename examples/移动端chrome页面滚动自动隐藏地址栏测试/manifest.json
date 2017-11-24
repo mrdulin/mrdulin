@@ -1,0 +1,16 @@
+{
+  "short_name": "找医生",
+  "name": "找医生+",
+  "background_color": "#fff",
+  "theme_color": "lightblue",
+  "icons": [
+    {
+      "src": "icons8-twitter.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}
