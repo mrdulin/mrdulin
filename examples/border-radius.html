@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .avatar-box {
+      /* 父容器加定位数据，在三星部分机型上会导致border-radius失效 */
+      /* position: relative; */
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .avatar-box>img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class='avatar-box'>
+    <img src="http://7xp9vw.com1.z0.glb.clouddn.com/34340884423-03-57-.jpg" alt="">
+  </div>
+</body>
+
+</html>
