@@ -46,10 +46,8 @@
 
 ---
 
-[![mrdulin's github stats](github-readme-stats.mrdulin.vercel.app/api?username=mrdulin&show_icons=true&theme=radical)](https://github.com/mrdulin/github-readme-stats)
+<img align="left" alt="mrdulin's Github Stats" src="https://github-readme-stats.mrdulin.vercel.app/api?username=mrdulin&show_icons=true&theme=radical" />
 
-
-https://github.com/anuraghazra/github-readme-stats
 
 [twitter]: https://twitter.com/slideshowp2
 [youtube]: https://www.youtube.com/channel/UC4xtSPPa6fWUlr43XsZeOAQ
