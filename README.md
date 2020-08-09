@@ -11,7 +11,8 @@
 [<img align="left" alt="slideshowp2 | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="slideshowp2 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="slideshowp2 | Stack Overflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/stackoverflow.svg" />][stackoverflow]
-[<img align="left" alt="slideshowp2 | Stack Overflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/steam.svg" />][steam]
+[<img align="left" alt="slideshowp2 | Steam" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/steam.svg" />][steam]
+[<img align="left" alt="slideshowp2 | CodeWars" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/codewars.svg" />][codewars]
 
 
 <br />
@@ -45,4 +46,5 @@
 [youtube]: https://www.youtube.com/channel/UC4xtSPPa6fWUlr43XsZeOAQ
 [stackoverflow]: https://stackoverflow.com/users/6463558/slideshowp2
 [steam]: https://steamcommunity.com/id/slideshowp2/
+[codewars]: https://www.codewars.com/users/mrdulin
 
