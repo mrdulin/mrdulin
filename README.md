@@ -21,9 +21,9 @@
 
 ### Languages and Tools:
 
-<img align="left" alt="JavaScript" src="https://img.icons8.com/color/38/000000/javascript.png"/>
-<img align="left" alt="TypeScript" src="https://img.icons8.com/color/38/000000/typescript.png"/>
-<img align="left" alt="Golang" src="https://img.icons8.com/color/38/000000/golang.png"/>
+<img align="left" alt="JavaScript" src="https://img.icons8.com/color/36/000000/javascript.png"/>
+<img align="left" alt="TypeScript" src="https://img.icons8.com/color/36/000000/typescript.png"/>
+<img align="left" alt="Golang" src="https://img.icons8.com/color/36/000000/golang.png"/>
 <img align="left" alt="HTML5" src="https://img.icons8.com/color/36/000000/html-5.png"/>
 <img align="left" alt="CSS3" src="https://img.icons8.com/color/36/000000/css3.png"/>
 <img align="left" alt="React" src="https://img.icons8.com/plasticine/36/000000/react.png"/>
@@ -44,9 +44,6 @@
 <img align="left" alt="Visual Studio Code" src="https://img.icons8.com/fluent/36/000000/visual-studio-code-2019.png"/>
 <img align="left" alt="express" width="36px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/express/express.png" />
 
-<br />
-<br />
-<br />
 <br />
 <br />
 
