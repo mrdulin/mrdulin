@@ -17,6 +17,7 @@
 [<img align="left" alt="slideshowp2 | Wikipedia" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/wikipedia.svg" />][wikipedia]
 [<img align="left" alt="slideshowp2 | Opencollective" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/opencollective.svg" />][opencollective]
 [<img align="left" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="official_dulin's DEV Profile" height="22" width="22">][dev.to]
+[<img align="left" alt="slideshowp2 | hackerrank" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/hackerrank.svg" />][hackerrank]
 
 
 <br />
@@ -68,3 +69,4 @@
 [wikipedia]: https://zh.wikipedia.org/wiki/User:Slideshowp2/%E5%85%B3%E4%BA%8E%E6%88%91
 [opencollective]: https://opencollective.com/lin-du
 [dev.to]: https://dev.to/mrdulin
+[HackerRank]: https://www.hackerrank.com/slideshowp2
