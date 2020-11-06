@@ -1,6 +1,6 @@
 ### Hi there, I'm Du Lin - aka slideshowp2 👋
 
-## I'm Full Stack Developer, Electrical Engineer and Perfectionist.
+## I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 2020 Goals: Contribute more to Open Source projects
