@@ -51,13 +51,13 @@
 <img align="left" alt="Google Adwords" src="https://img.icons8.com/nolan/36/google-adwords.png"/>
 <img align="left" alt="express" width="36px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/express/express.png" />
 
-<br />
+<!-- <br />
 <br />
 <br />
 <br />
 
 <img align="left" alt="mrdulin's Github Stats" src="https://github-readme-stats.mrdulin.vercel.app/api?username=mrdulin&show_icons=true&theme=radical" />
-
+ -->
 <!-- hide counter -->
 <a href="https://info.flagcounter.com/ab0j"><img src="https://s11.flagcounter.com/count2/ab0j/bg_FFFFFF/txt_000000/border_CCCCCC/columns_6/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" width="0px" height="0px" border="0"></a>
 
