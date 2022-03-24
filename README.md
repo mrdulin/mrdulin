@@ -1,5 +1,9 @@
 ### Hi there, I'm Du Lin - aka slideshowp2 👋
 
+<div>
+  <a href="https://app.daily.dev/Lin_Du" ><img align='right' src="https://api.daily.dev/devcards/de525bafe27745f1837d14f74f4fdb18.png?r=vlh" width="200" alt="official_dulin's Dev Card"/></a>
+ </div>
+
 ## I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
