@@ -23,6 +23,7 @@
 [<img align="left" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="official_dulin's DEV Profile" height="22" width="22">][dev.to]
 [<img align="left" alt="slideshowp2 | hackerrank" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/hackerrank.svg" />][hackerrank]
 [<img align="left" alt="slideshowp2 | producthunt" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/producthunt.svg" />][producthunt]
+[<img align="left" alt="slideshowp2 | soundcloud" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/soundcloud.svg" />][soundcloud]
 
 
 <br />
@@ -76,3 +77,4 @@
 [dev.to]: https://dev.to/mrdulin
 [HackerRank]: https://www.hackerrank.com/slideshowp2
 [producthunt]: https://www.producthunt.com/@novaliine
+[soundcloud]: https://soundcloud.com/slideshowp2
