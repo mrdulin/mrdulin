@@ -41,20 +41,20 @@
 <img align="left" alt="GCP" src="https://img.icons8.com/color/36/000000/google-cloud-platform.png"/>
 <img align="left" alt="GraphQL" src="https://img.icons8.com/color/36/000000/graphql.png"/>
 <img align="left" alt="Angular" src="https://img.icons8.com/color/36/000000/angularjs.png"/>
-<img align="left" alt="webpack" src="https://img.icons8.com/dusk/36/000000/webpack.png"/>
-<img align="left" alt="docker" src="https://img.icons8.com/dusk/36/000000/docker.png"/>
+<img align="left" alt="Webpack" src="https://img.icons8.com/dusk/36/000000/webpack.png"/>
+<img align="left" alt="Docker" src="https://img.icons8.com/dusk/36/000000/docker.png"/>
 <img align="left" alt="Git" src="https://img.icons8.com/color/36/000000/git.png"/>
 <img align="left" alt="PostgreSQL" src="https://img.icons8.com/color/36/000000/postgreesql.png"/>
 <img align="left" alt="MongoDB" src="https://img.icons8.com/color/36/000000/mongodb.png"/>
 <img align="left" alt="GitHub" src="https://img.icons8.com/fluent/36/000000/github.png"/>
-<img align="left" alt="jquery" src="https://img.icons8.com/ios-filled/36/000000/jquery.png"/>
+<img align="left" alt="Jquery" src="https://img.icons8.com/ios-filled/36/000000/jquery.png"/>
 <img align="left" alt="SQL" src="https://img.icons8.com/wired/36/000000/sql.png"/>
 <img align="left" alt="Python" src="https://img.icons8.com/color/36/000000/python.png"/>
 <img align="left" alt="Sass" src="https://img.icons8.com/color/36/000000/sass.png"/>
 <img align="left" alt="Visual Studio Code" src="https://img.icons8.com/fluent/36/000000/visual-studio-code-2019.png"/>
-<img align="left" alt="bootstrap" src="https://img.icons8.com/color/36/000000/bootstrap.png"/>
+<img align="left" alt="Bootstrap" src="https://img.icons8.com/color/36/000000/bootstrap.png"/>
 <img align="left" alt="Google Adwords" src="https://img.icons8.com/nolan/36/google-adwords.png"/>
-<img align="left" alt="express" width="36px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/express/express.png" />
+<img align="left" alt="Express" width="36px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/express/express.png" />
 
 <!-- <br />
 <br />
