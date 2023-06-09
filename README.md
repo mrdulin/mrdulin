@@ -15,6 +15,7 @@
 [<img align="left" alt="slideshowp2 | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="slideshowp2 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="slideshowp2 | Stack Overflow" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/stackoverflow.svg" />][stackoverflow]
+[<img align="left" alt="slideshowp2 | Stack Exchange" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/stackexchange.svg" />][stackexchange]
 [<img align="left" alt="slideshowp2 | Steam" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/steam.svg" />][steam]
 [<img align="left" alt="slideshowp2 | CodeWars" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/codewars.svg" />][codewars]
 [<img align="left" alt="slideshowp2 | Imgur" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.4.0/icons/imgur.svg" />][imgur]
@@ -69,6 +70,7 @@
 [twitter]: https://twitter.com/slideshowp2
 [youtube]: https://www.youtube.com/channel/UC4xtSPPa6fWUlr43XsZeOAQ
 [stackoverflow]: https://stackoverflow.com/users/6463558/slideshowp2
+[stackexchange]: https://stackexchange.com/users/8632300/lin-du
 [steam]: https://steamcommunity.com/id/slideshowp2/
 [codewars]: https://www.codewars.com/users/mrdulin
 [imgur]: https://imgur.com/user/slideshowp2/submitted
