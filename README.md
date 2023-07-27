@@ -80,3 +80,9 @@
 [HackerRank]: https://www.hackerrank.com/slideshowp2
 [producthunt]: https://www.producthunt.com/@novaliine
 [soundcloud]: https://soundcloud.com/slideshowp2
+
+<br />
+
+### More Works
+
+ - [JS Promise implemented by Go](https://github.com/mrdulin/go-promise)
