@@ -1,16 +1,16 @@
-<h2>Hi there, I'm Du Lin - aka slideshowp2👋</h2>
+**Hi there, I'm Du Lin - aka slideshowp2👋**
 
 <div>
   <a href="https://app.daily.dev/Lin_Du" ><img align='right' src="https://api.daily.dev/devcards/de525bafe27745f1837d14f74f4fdb18.png?r=vlh" width="200" alt="official_dulin's Dev Card"/></a>
  </div>
 
-<h2>I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.</h2>
+**I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.**
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 2023 Goals: Contribute more to Open Source projects
 - ⚡ Fun fact: I love to play music game, but AFK for a long time.
 
-<h3>Connect with me:</h3>
+**Connect with me:**
 
 [<img align="left" alt="slideshowp2 | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="slideshowp2 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
@@ -29,7 +29,7 @@
 
 <br />
 
-<h3>Languages and Tools:</h3>
+**Languages and Tools:**
 
 <img align="left" alt="JavaScript" src="https://img.icons8.com/color/36/000000/javascript.png"/>
 <img align="left" alt="TypeScript" src="https://img.icons8.com/color/36/000000/typescript.png"/>
@@ -83,7 +83,7 @@
 
 <br />
 
-<h3>More works</h3>
+**More works**
 
 - [JS Promise static methods implemented by Go](https://github.com/mrdulin/go-promise)
 - [Google Ads API Client Library for Node.js (SOAP + WSDL)](https://github.com/mrdulin/nodejs-google-adwords)
