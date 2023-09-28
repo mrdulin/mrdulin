@@ -28,6 +28,7 @@
 
 
 <br />
+<br />
 
 **Languages and Tools:**
 
@@ -81,6 +82,7 @@
 [producthunt]: https://www.producthunt.com/@novaliine
 [soundcloud]: https://soundcloud.com/slideshowp2
 
+<br />
 <br />
 
 **More works**
