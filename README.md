@@ -6,7 +6,7 @@
 - 🥅 2023 Goals: Contribute more to Open Source projects
 - ⚡ Fun fact: I love to play music game, but AFK for a long time.
 
-**Connect with me:**
+**Connect with me**
 
 [<img align="left" alt="slideshowp2 | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="slideshowp2 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
@@ -26,7 +26,7 @@
 <br />
 <br />
 
-**Languages and Tools:**
+**Languages and Tools**
 
 <img align="left" alt="JavaScript" src="https://img.icons8.com/color/36/000000/javascript.png"/>
 <img align="left" alt="TypeScript" src="https://img.icons8.com/color/36/000000/typescript.png"/>
@@ -81,6 +81,7 @@
 <br />
 <br />
 
+**Badges**
 <div>
   <a href="https://app.daily.dev/Lin_Du" ><img src="https://api.daily.dev/devcards/de525bafe27745f1837d14f74f4fdb18.png?r=vlh" width="200" alt="official_dulin's Dev Card"/></a>
   <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/tall/65795d2e5145316d25f7cb66?variant=dark&roadmaps=graphql" width="210" alt="roadmap.sh"/></a>
