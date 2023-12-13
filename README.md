@@ -84,7 +84,7 @@
 **Badges**
 <div>
   <a href="https://app.daily.dev/Lin_Du" ><img src="https://api.daily.dev/devcards/de525bafe27745f1837d14f74f4fdb18.png?r=vlh" width="200" alt="official_dulin's Dev Card"/></a>
-  <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/tall/65795d2e5145316d25f7cb66?variant=dark&roadmaps=graphql" width="210" alt="roadmap.sh"/></a>
+  <a href="https://roadmap.sh"><img width='210' src="https://api.roadmap.sh/v1-badge/tall/65795d2e5145316d25f7cb66?variant=dark&roadmaps=graphql%2Creact%2Ccode-review" alt="roadmap.sh"/></a>
  </div>
 
 **More works**
