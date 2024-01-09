@@ -3,8 +3,8 @@
 **I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.**
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
-- 🥅 2023 Goals: Contribute more to Open Source projects
-- ⚡ Fun fact: I love to play music game, but AFK for a long time.
+- 🥅 2024 Goals: Contribute more to Open Source projects
+- ⚡ Fun fact: I love to play music games, but AFK for a long time.
 
 **Connect with me**
 
