@@ -1,4 +1,4 @@
-**Hi there, I'm Du Lin - aka slideshowp2👋**
+**Hi there, I'm Du Lin👋**
 
 **I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.**
 - 🌱 I’m currently learning everything 🤣
