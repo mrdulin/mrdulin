@@ -68,7 +68,7 @@
 [youtube]: https://www.youtube.com/channel/UC4xtSPPa6fWUlr43XsZeOAQ
 [stackoverflow]: https://stackoverflow.com/users/6463558/slideshowp2
 [stackexchange]: https://stackexchange.com/users/8632300/lin-du
-[steam]: https://steamcommunity.com/id/slideshowp2/
+[steam]: https://steamcommunity.com/profiles/76561198142513329
 [codewars]: https://www.codewars.com/users/mrdulin
 [imgur]: https://imgur.com/user/slideshowp2/submitted
 [wikipedia]: https://zh.wikipedia.org/wiki/User:Slideshowp2/%E5%85%B3%E4%BA%8E%E6%88%91
