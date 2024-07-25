@@ -93,3 +93,4 @@
 
 - [JS Promise static methods implemented by Go](https://github.com/mrdulin/go-promise)
 - [Google Ads API Client Library for Node.js (SOAP + WSDL)](https://github.com/mrdulin/nodejs-google-adwords)
+- [A dozen of utils for Front-End Development](https://github.com/mrdulin/dm-utils)
