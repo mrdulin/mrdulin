@@ -27,6 +27,7 @@
 
 **Languages and Tools**
 
+<div float="left">
 <img align="left" alt="JavaScript" src="https://img.icons8.com/color/36/000000/javascript.png"/>
 <img align="left" alt="TypeScript" src="https://img.icons8.com/color/36/000000/typescript.png"/>
 <img align="left" alt="Golang" src="https://img.icons8.com/color/36/000000/golang.png"/>
@@ -52,6 +53,7 @@
 <img align="left" alt="Bootstrap" src="https://img.icons8.com/color/36/000000/bootstrap.png"/>
 <img align="left" alt="Google Adwords" src="https://img.icons8.com/nolan/36/google-adwords.png"/>
 <img align="left" alt="Express" width="36px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/express/express.png" />
+</div>
 
 <!-- <br />
 <br />
