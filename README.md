@@ -1,4 +1,4 @@
-**Hi there, I'm Du Lin👋**
+**Hi there, I'm Lin Du👋**
 
 **I'm a Full Stack Developer, Electrical Engineer, and Perfectionist.**
 - 🌱 I’m currently learning everything 🤣
