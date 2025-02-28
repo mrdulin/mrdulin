@@ -73,7 +73,7 @@
 [wikipedia]: https://zh.wikipedia.org/wiki/User:Slideshowp2/%E5%85%B3%E4%BA%8E%E6%88%91
 [opencollective]: https://opencollective.com/lin-du
 [dev.to]: https://dev.to/mrdulin
-[HackerRank]: https://www.hackerrank.com/slideshowp2
+[HackerRank]: https://www.hackerrank.com/profile/lin_du
 [producthunt]: https://www.producthunt.com/@lin_du
 [soundcloud]: https://soundcloud.com/lin_du
 [codeium]: https://codeium.com/profile/lin_du
