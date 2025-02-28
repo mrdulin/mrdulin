@@ -74,7 +74,7 @@
 [opencollective]: https://opencollective.com/lin-du
 [dev.to]: https://dev.to/mrdulin
 [HackerRank]: https://www.hackerrank.com/slideshowp2
-[producthunt]: https://www.producthunt.com/@novaliine
+[producthunt]: https://www.producthunt.com/@lin_du
 [soundcloud]: https://soundcloud.com/lin_du
 [codeium]: https://codeium.com/profile/lin_du
 
